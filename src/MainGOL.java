@@ -6,9 +6,9 @@ public class MainGOL {
 
     public static void main(String[] args) throws IOException {
         //1. Read and parse .gol file to a 2d array
- //       String incomingFile = System.console().readLine("Which file would you want to print?"); uncomment later
-//        Reader r = new FileReader(incomingFile+".gol"); uncomment later
-        Reader r = new FileReader("toad.gol"); //for testing only
+        String incomingFile = System.console().readLine("Which file would you want to print? (Blinker, glider, toad, or even your own file! :)");
+        Reader r = new FileReader(incomingFile+".gol");
+        /*Reader r = new FileReader("toad.gol"); //for testing only*/
         BufferedReader br = new BufferedReader(r);
         int gridRow = 0;
         int gridCol = 0;
